@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<HTML>
+	<meta charset="UTF-8">
+	<title>Runner</title>
+<BODY>
+	<SCRIPT type ="text/javascript">
+		window.onload=function(){
+			var game= new Phaser.Game(900,500,Phaser,CANVAS,'');
+
+			game.state.add('Boot',Game.Boot);
+			game.state.add('Preloader',Game.Preloader);
+			game.state.add('MainMenu',Game.Main Menu);
+			game.state.add('OnePlayer',Game.OnePlayer);
+			game.state.add('TwoPlayer',Game.TwoPlayer);
+
+			game.state.start("Boot");
+
+	}
+
+	</SCRIPT>
+</BODY>
+</HTML>
